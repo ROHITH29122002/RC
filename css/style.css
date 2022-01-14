@@ -192,3 +192,13 @@ body {
     font-size: 2rem;
   }
 }
+
+/* Hero Component */
+
+.hero {
+  background: url(/images/intro.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80%;
+}
