@@ -41,9 +41,9 @@ body {
   padding-left: 1rem;
   background: rgb(234, 76, 59);
   background: linear-gradient(
-    90deg,
-    rgba(234, 76, 59, 1) 60%,
-    rgba(252, 193, 17, 1) 81%
+    135deg,
+    rgba(234, 76, 59, 1) 56%,
+    rgba(252, 193, 17, 1) 85%
   );
   background-size: 100%;
   background-clip: text;
@@ -73,9 +73,9 @@ body {
   font-weight: 700;
   background: rgb(234, 76, 59);
   background: linear-gradient(
-    90deg,
-    rgba(234, 76, 59, 1) 60%,
-    rgba(252, 193, 17, 1) 81%
+    135deg,
+    rgba(234, 76, 59, 1) 56%,
+    rgba(252, 193, 17, 1) 85%
   );
   background-size: 100%;
   background-clip: text;
@@ -115,9 +115,9 @@ body {
   font-size: 3rem;
   background: rgb(234, 76, 59);
   background: linear-gradient(
-    90deg,
-    rgba(234, 76, 59, 1) 60%,
-    rgba(252, 193, 17, 1) 90%
+    135deg,
+    rgba(234, 76, 59, 1) 56%,
+    rgba(252, 193, 17, 1) 85%
   );
   background-size: 100%;
   background-clip: text;
@@ -131,7 +131,7 @@ body {
 }
 
 .nb-close {
-  font-size: 2rem;
+  font-size: 3rem;
   display: none;
   cursor: pointer;
 }
@@ -156,9 +156,9 @@ body {
     display: block;
     background: rgb(234, 76, 59);
     background: linear-gradient(
-      90deg,
-      rgba(234, 76, 59, 1) 60%,
-      rgba(252, 193, 17, 1) 90%
+      135deg,
+      rgba(234, 76, 59, 1) 56%,
+      rgba(252, 193, 17, 1) 85%
     );
     background-size: 100%;
     background-clip: text;
@@ -173,6 +173,7 @@ body {
 
   .nb-open {
     display: block;
+    margin-right: 2rem;
   }
 
   .nav-bar a {
@@ -181,7 +182,7 @@ body {
 
   .nb-logout {
     margin-top: 2rem;
-    margin-left: 5rem;
+    margin-left: 3rem;
   }
 
   .nb-logo {
@@ -196,10 +197,57 @@ body {
 /* Hero Component */
 
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(../images/intro.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 80%;
+  height: 70%;
+  box-shadow: 0 0 20px #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+  .hero {
+    background-position: 50% 75%;
+  }
+}
+
+.hero-heading,
+.hero-name {
+  text-align: center;
+  background: rgb(234, 76, 59);
+  background: linear-gradient(
+    135deg,
+    rgba(234, 76, 59, 1) 56%,
+    rgba(252, 193, 17, 1) 85%
+  );
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  font-weight: 700;
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+
+.hero-para {
+  text-align: center;
+  background: rgb(234, 76, 59);
+  background: linear-gradient(
+    135deg,
+    rgba(234, 76, 59, 1) 56%,
+    rgba(252, 193, 17, 1) 85%
+  );
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  font-weight: 700;
 }
