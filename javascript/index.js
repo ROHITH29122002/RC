@@ -5,6 +5,7 @@ const nbclose = document.querySelector(".nb-close");
 
 
 if(localStorage.getItem('name')){
+    console.log('name');
 }
 else{
     document.querySelector('#nb-logout').style.display="none";
