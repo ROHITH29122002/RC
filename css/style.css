@@ -196,7 +196,7 @@ body {
 /* Hero Component */
 
 .hero {
-  background: url(/images/intro.webp);
+  background: url(/images/background.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
