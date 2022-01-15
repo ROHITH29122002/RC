@@ -5,10 +5,13 @@ const nbclose = document.querySelector(".nb-close");
 
 
 if(localStorage.getItem('name')){
-    console.log('name');
+    document.querySelector('#nameform-container').style.display="none";
+    document.querySelector('#nb-logout').style.display="block";
 }
 else{
     document.querySelector('#nb-logout').style.display="none";
+    document.querySelector('.name-container').style.display="none";
+    document.querySelector('#nameform-container').style.display="block";
 }
 nbopen.addEventListener('click',show);
 nbclose.addEventListener('click',close);
@@ -20,4 +23,9 @@ function show(){
 
 function close(){
     nbright.style.top = '-100%';
+}
+
+document.querySelector('#nb-logout').onclick = function (){
+    localStorage.removeItem('name');
+    location.reload();
 }

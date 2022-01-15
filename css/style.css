@@ -202,7 +202,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 70%;
+  height: 60%;
   box-shadow: 0 0 20px #000;
   display: flex;
   justify-content: center;
@@ -249,5 +249,34 @@ body {
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
+  font-size: 2rem;
   font-weight: 700;
+}
+
+.name-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 950px) {
+  .hero {
+    justify-content: flex-start;
+    height: 70%;
+  }
+
+  .name-container {
+    align-items: flex-start;
+    margin-left: 10rem;
+  }
+
+  .hero-heading {
+    font-size: 6rem;
+  }
+
+  .hero-para {
+    text-align: start;
+    font-size: 4rem;
+  }
 }
