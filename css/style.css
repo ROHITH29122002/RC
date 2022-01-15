@@ -347,3 +347,22 @@ body {
     margin-bottom: 2rem;
   }
 }
+
+.check {
+  margin: 10rem 3rem 2rem;
+  text-align: center;
+  background: rgb(234, 76, 59);
+  background: linear-gradient(
+    135deg,
+    rgba(234, 76, 59, 1) 56%,
+    rgba(252, 193, 17, 1) 85%
+  );
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  word-wrap: break-word;
+  font-size: 4rem;
+}
