@@ -259,6 +259,57 @@ body {
   align-items: center;
   flex-direction: column;
 }
+.nameform-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.name-heading {
+  background: rgb(234, 76, 59);
+  background: linear-gradient(
+    135deg,
+    rgba(234, 76, 59, 1) 56%,
+    rgba(252, 193, 17, 1) 85%
+  );
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  font-size: 5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.name-input {
+  outline: 0;
+  border: 0;
+  border-radius: 5px;
+  padding: 2rem 3.5rem;
+}
+.name-input::placeholder {
+  color: orange;
+}
+
+.name-submit {
+  font-weight: 700;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 2rem 3rem;
+  color: black;
+  margin-left: 2rem;
+}
+
+.name-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
 @media screen and (min-width: 950px) {
   .hero {
@@ -266,7 +317,8 @@ body {
     height: 70%;
   }
 
-  .name-container {
+  .name-container,
+  .nameform-container {
     align-items: flex-start;
     margin-left: 10rem;
   }
@@ -278,5 +330,11 @@ body {
   .hero-para {
     text-align: start;
     font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 358px) {
+  .name-submit {
+    margin-top: 2rem;
   }
 }
