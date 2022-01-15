@@ -398,9 +398,17 @@ body {
     rgba(252, 193, 17, 1) 85%
   );
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  transition: 1s ease;
+  margin-bottom: 3rem;
 }
 .grid-container2 {
   margin-left: 5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.grid-container1:hover,
+.grid-container2:hover {
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 1000px) {
@@ -476,6 +484,7 @@ body {
   font-weight: 700;
   background: rgb(231, 68, 68);
   cursor: pointer;
+  transition: 1s ease;
 }
 
 .start-link:hover {
