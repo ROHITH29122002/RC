@@ -388,7 +388,7 @@ body {
     rgba(234, 76, 59, 1) 56%,
     rgba(252, 193, 17, 1) 85%
   );
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
 }
 
 .logo-container {
@@ -438,4 +438,24 @@ body {
 
 .start-container {
   grid-area: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.start-link {
+  text-decoration: none;
+  border: 2px solid rgb(231, 68, 68);
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  color: white;
+  font-weight: 700;
+  background: rgb(231, 68, 68);
+  cursor: pointer;
+}
+
+.start-link:hover {
+  border-color: rgb(139, 216, 23);
+  background-color: rgb(139, 216, 23);
 }
