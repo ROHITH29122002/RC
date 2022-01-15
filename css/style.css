@@ -304,6 +304,11 @@ body {
   margin-left: 2rem;
 }
 
+.name-submit-green {
+  background-color: rgb(139, 216, 23);
+  color: #fff;
+}
+
 .name-form {
   display: flex;
   justify-content: center;
