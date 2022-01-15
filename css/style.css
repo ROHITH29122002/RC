@@ -338,8 +338,12 @@ body {
   }
 }
 
-@media screen and (max-width: 358px) {
-  .name-submit {
-    margin-top: 2rem;
+@media screen and (max-width: 450px) {
+  .name-form {
+    flex-direction: column;
+  }
+
+  .name-input {
+    margin-bottom: 2rem;
   }
 }
