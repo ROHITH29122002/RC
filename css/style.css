@@ -212,12 +212,6 @@ body {
   align-items: center;
 }
 
-@media screen and (max-width: 500px) {
-  .hero {
-    background-position: 50% 75%;
-  }
-}
-
 .hero-heading,
 .hero-name {
   text-align: center;
@@ -255,6 +249,19 @@ body {
   font-size: 2rem;
   font-weight: 700;
   padding: 2rem;
+}
+
+@media screen and (max-width: 500px) {
+  .hero {
+    background-position: 50% 75%;
+    overflow: hidden;
+  }
+  .hero-heading {
+    font-size: 4rem;
+  }
+  .hero-para {
+    font-size: 2rem;
+  }
 }
 
 .name-container {
