@@ -251,6 +251,7 @@ body {
   -moz-text-fill-color: transparent;
   font-size: 2rem;
   font-weight: 700;
+  padding: 2rem;
 }
 
 .name-container {
@@ -349,7 +350,7 @@ body {
 }
 
 .check {
-  margin: 8rem 3rem 2rem;
+  margin: 8rem 3rem;
   text-align: center;
   background: rgb(234, 76, 59);
   background: linear-gradient(
@@ -375,7 +376,7 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template: 30rem 23rem 10rem / 30rem;
+  grid-template: 15rem 23rem 10rem / 30rem;
   grid-template-areas: "logo" "instruction" "start";
   border-radius: 1.5rem;
   background: rgb(234, 76, 59);
@@ -389,10 +390,13 @@ body {
 
 .logo-container {
   grid-area: logo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo {
-  width: 100%;
+  width: 50%;
   height: 100%;
 }
 
