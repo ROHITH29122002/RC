@@ -307,8 +307,8 @@ body {
 }
 
 .name-submit {
+  outline: 0;
   font-weight: 700;
-  border: 1px solid #ccc;
   border-radius: 5px;
   padding: 2rem 3rem;
   color: black;
@@ -317,6 +317,7 @@ body {
 
 .name-submit-green {
   background-color: rgb(139, 216, 23);
+  border: 1px solid rgb(139, 216, 23);
   color: #fff;
 }
 
@@ -384,7 +385,8 @@ body {
   align-items: center;
 }
 
-.grid-container {
+.grid-container1,
+.grid-container2 {
   display: grid;
   grid-template: 15rem 23rem 10rem / 30rem;
   grid-template-areas: "logo" "instruction" "start";
@@ -396,6 +398,20 @@ body {
     rgba(252, 193, 17, 1) 85%
   );
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+.grid-container2 {
+  margin-left: 5rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .grid {
+    flex-direction: column;
+  }
+
+  .grid-container2 {
+    margin-top: 5rem;
+    margin-left: 0;
+  }
 }
 
 .logo-container {
