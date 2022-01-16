@@ -97,7 +97,7 @@ body {
 
 .nb-logout {
   padding: 1rem;
-  margin-left: 2rem;
+  margin-left: 1rem;
   margin-right: 1rem;
   background: red;
   color: white;
@@ -502,4 +502,83 @@ body {
   font-weight: 700;
   background: rgb(139, 216, 23);
   cursor: pointer;
+}
+
+footer {
+  margin-top: 4rem;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.f-logo-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.f-name {
+  background: rgb(234, 76, 59);
+  background: linear-gradient(
+    135deg,
+    rgba(234, 76, 59, 1) 56%,
+    rgba(252, 193, 17, 1) 85%
+  );
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  font-size: 4rem;
+}
+
+.f-logo {
+  width: 30%;
+  height: 30%;
+}
+
+.f-contact {
+  color: #fff;
+  text-align: center;
+}
+
+.link-container {
+  width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.discord,
+.instagram,
+.github {
+  width: 100%;
+}
+
+.link-container a {
+  margin-left: 1rem;
+}
+
+@media screen and (max-width: 850px) {
+  .f-logo-container {
+    justify-content: center;
+    margin-left: 2rem;
+  }
+  .f-right {
+    margin-left: -2rem;
+    margin-top: 2rem;
+  }
+
+  .link-container {
+    margin: 3rem 1rem 3rem -1rem;
+  }
+}
+
+hr {
+  border: 0;
+  border: 1px solid #fff;
 }
