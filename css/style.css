@@ -61,7 +61,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.904);
   flex-wrap: wrap;
 }
 
@@ -449,10 +449,27 @@ body {
 }
 
 .instruction-heading {
-  color: #fff;
+  background: rgb(234, 76, 59);
+  background: linear-gradient(
+    135deg,
+    rgba(234, 76, 59, 1) 56%,
+    rgba(252, 193, 17, 1) 85%
+  );
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
   font-size: 2rem;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+}
+
+.howtoplay {
+  color: #fff;
+  text-align: start;
+  margin-bottom: 0.5rem;
 }
 
 .instructions {
@@ -465,7 +482,7 @@ body {
   list-style-image: url(../images/tick.svg);
   color: #fff;
   font-weight: 700;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 .start-container {
