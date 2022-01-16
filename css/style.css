@@ -88,11 +88,11 @@ body {
   -moz-text-fill-color: transparent;
   font-size: 2rem;
   padding-bottom: 0.2rem;
+  transition: 0.5 ease;
 }
 
 .nav-bar a:hover {
-  font-size: 2.5rem;
-  transition: font-size 0.5s ease;
+  transform: scale(1.2);
 }
 
 .nb-logout {
@@ -507,6 +507,10 @@ body {
 footer {
   margin-top: 4rem;
   background-color: #000;
+  color: white;
+}
+
+.footer-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -557,6 +561,13 @@ footer {
 .instagram,
 .github {
   width: 100%;
+  transition: 0.5s ease;
+}
+
+.discord:hover,
+.instagram:hover,
+.github:hover {
+  transform: scale(1.2);
 }
 
 .link-container a {
@@ -578,7 +589,16 @@ footer {
   }
 }
 
+.rights {
+  margin: 3rem;
+}
+
 hr {
-  border: 0;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
+}
+
+.rights-heading {
+  font-weight: 700;
+  margin-top: 2rem;
+  text-align: center;
 }
