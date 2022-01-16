@@ -536,6 +536,7 @@ footer {
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
   font-size: 4rem;
+  margin-left: 2rem;
 }
 
 .f-logo {
@@ -594,7 +595,7 @@ footer {
 }
 
 hr {
-  border: 2px solid #fff;
+  border: 1px solid #fff;
 }
 
 .rights-heading {

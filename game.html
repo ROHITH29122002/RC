@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>THE DINO GAME</title>
+    <link rel="stylesheet" href="css/game.css" />
+    <link rel="icon" href="images/icon.png" />
+  </head>
+  <body>
+    <div class="game-align">
+      <div class="game-container">
+        <div class="character" id="character">
+          <img class="dinosaur" src="images/dinosaur.png" alt="dinosaur" />
+        </div>
+        <div class="block" id="block">
+          <img class="cactus" src="images/cactus.png" alt="cactus" />
+        </div>
+      </div>
+    </div>
+    <div class="score-container">
+      <h1 id="highscore" class="highscore">HIGHSCORE : 0</h1>
+      <h1 id="score" class="score">YOUR SCORE: 0</h1>
+    </div>
+    <div class="restart-container">
+      <button class="restart-button" id="restart-button">RESTART</button>
+      <span class="home-button">
+        <a href="index.html" class="homelink">GO BACK</a>
+      </span>
+    </div>
+  </body>
+  <script src="javascript/game.js"></script>
+</html>
