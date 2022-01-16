@@ -45,5 +45,5 @@ document.querySelector('#nb-logout').onclick = function (){
 }
 
 function nameplacer(){
-    document.querySelector('.hero-heading').innerHTML=`WELCOME , ${localStorage.getItem('name')}`;
+    document.querySelector('.hero-heading').innerHTML=`WELCOME  ${localStorage.getItem('name')}`;
 }
