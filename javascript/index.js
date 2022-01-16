@@ -5,11 +5,15 @@ const nbclose = document.querySelector(".nb-close");
 
 if(localStorage.getItem('name')){
     document.querySelector('#nameform-container').style.display="none";
+    document.querySelector('#login1').style.display="none";
+    document.querySelector('#login2').style.display="none";
     nameplacer();
 }
 else{
     document.querySelector('#nb-logout').style.display="none";
     document.querySelector('.name-container').style.display="none";
+    document.querySelector('#start1').style.display="none";
+    document.querySelector('#start2').style.display="none";
     document.querySelector('#name-submit').disabled="true";
     document.getElementById('name-input').onkeyup = function(){
         if(document.querySelector('#name-input').value.length>0){

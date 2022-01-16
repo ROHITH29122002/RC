@@ -68,7 +68,8 @@ body {
 .nb-home,
 .nb-about {
   padding-left: 1rem;
-  padding-right: 1rem;
+  padding-right: 2rem;
+  margin-right: 1rem;
 }
 
 .nav-bar a {
@@ -502,6 +503,24 @@ body {
   font-weight: 700;
   background: rgb(139, 216, 23);
   cursor: pointer;
+}
+
+.login {
+  text-decoration: none;
+  border: 2px solid rgb(139, 216, 23);
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  color: white;
+  font-weight: 700;
+  background: rgb(139, 216, 23);
+  cursor: pointer;
+}
+
+#login1,
+#login2 {
+  border-color: rgb(234, 76, 59);
+  background: rgb(234, 76, 59);
 }
 
 footer {
