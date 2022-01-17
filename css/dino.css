@@ -18,6 +18,7 @@ html {
   width: 80vw;
   height: 300px;
   border: 2px solid rgb(148, 147, 147);
+  margin-top: 5rem;
 }
 
 @media screen and (min-width: 1024px) {

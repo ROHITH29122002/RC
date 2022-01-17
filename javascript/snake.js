@@ -24,7 +24,7 @@ function iscollide(snake){
             return true;
         }
     }
-    if( snake[0].x>18 || snake[0].x<0 || snake[0].y>18 || snake[0].y<0){
+    if( snake[0].x>=18 || snake[0].x<=0 || snake[0].y>=18 || snake[0].y<=0){
         return true;
     }
 }
@@ -58,7 +58,18 @@ function gameEngine(){
         snakeElement.style.gridRowStart = e.y;
         snakeElement.style.gridColumnStart = e.x;
         if( index === 0){
-            snakeElement.classList.add('head');
+            if(inputdirection.x===-1){
+                snakeElement.classList.add('head-left');
+            }
+            else if(inputdirection.x===1){
+                snakeElement.classList.add('head-right');
+            }
+            else if(inputdirection.y===1){
+                snakeElement.classList.add('head-down');
+            }
+            else{
+                snakeElement.classList.add('head-up');
+            }
         }
         else{
             snakeElement.classList.add('snake');
@@ -86,10 +97,12 @@ window.addEventListener("keydown", e => {
         case "ArrowDown":
             inputdirection.x = 0;
             inputdirection.y = 1;
+            
             break;
         case "ArrowLeft":
             inputdirection.x = -1;
             inputdirection.y = 0;
+            
             break;
         case "ArrowRight":
             inputdirection.x = 1;

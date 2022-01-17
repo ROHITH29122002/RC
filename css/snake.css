@@ -27,8 +27,25 @@ body {
   grid-template: repeat(18, 1fr) / repeat(18, 1fr);
 }
 
-.head {
-  background: red;
+.head-up {
+  background: url(../images/snakeheadup.png);
+  background-size: 100%;
+  z-index: 1;
+}
+.head-down {
+  background: url(../images/snakehead.png);
+  background-size: 100%;
+  z-index: 1;
+}
+.head-left {
+  background: url(../images/snakeheadleft.png);
+  background-size: 100%;
+  z-index: 1;
+}
+.head-right {
+  background: url(../images/snakeheadright.png);
+  background-size: 100%;
+  z-index: 1;
 }
 
 .snake {
@@ -36,5 +53,6 @@ body {
 }
 
 .food {
-  background: yellow;
+  background: url(../images/apple.png);
+  background-size: 100%;
 }
