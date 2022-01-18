@@ -6,9 +6,9 @@ let snakeArr = [
     {x: 13,y: 15}
 ];
 let food = {x: 6 , y: 7};
-const eat = new Audio('../music/eat.mp3');
-const gameover = new Audio('../music/gameover.mp3');
-const move = new Audio('../music/move.mp3');
+const eat = new Audio('music/eat.mp3');
+const gameover = new Audio('music/gameover.mp3');
+const move = new Audio('music/move.mp3');
 
 
 
