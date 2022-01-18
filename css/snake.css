@@ -83,34 +83,34 @@ body {
 #down,
 #left,
 #right {
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
 }
 
 #down {
   transform: rotate(90deg);
   position: relative;
-  top: 12rem;
+  top: 16rem;
   left: 2.5rem;
 }
 
 #left {
   transform: rotate(180deg);
   position: relative;
-  top: 6rem;
-  left: -8rem;
+  top: 8rem;
+  left: -12rem;
 }
 
 #right {
   position: relative;
-  top: 6rem;
-  left: -2rem;
+  top: 8rem;
+  left: -3rem;
 }
 
 #up {
   transform: rotate(-90deg);
   position: relative;
-  left: 7.5rem;
+  left: 10rem;
 }
 
 .contols-img {
