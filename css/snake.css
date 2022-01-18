@@ -19,6 +19,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 5rem;
 }
 
 .game-board {
@@ -79,25 +80,45 @@ body {
   align-items: center;
   margin-top: 2rem;
 }
+#up,
+#down,
+#left,
+#right {
+  width: 30px;
+  height: 30px;
+}
 
 #down {
+  transform: rotate(90deg);
   position: relative;
-  top: 5rem;
-  left: 3.5rem;
+  top: 6rem;
 }
 
 #left {
+  transform: rotate(180deg);
   position: relative;
-  top: 2.5rem;
-  right: 8rem;
+  top: 3rem;
+  left: -6rem;
 }
 
 #right {
   position: relative;
-  top: 2.5rem;
+  top: 3rem;
+  left: -3rem;
 }
 
 #up {
+  transform: rotate(-90deg);
   position: relative;
-  left: 8rem;
+  left: 3rem;
+}
+
+.contols-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: dodgerblue;
+  border: 1px solid blue;
+  border-radius: 5px;
 }
