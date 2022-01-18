@@ -65,3 +65,7 @@ body {
   background-size: 80%;
   background-position: center;
 }
+
+.snake-div {
+  display: none;
+}

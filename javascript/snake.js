@@ -27,7 +27,7 @@ function iscollide(snake){
             return true;
         }
     }
-    if( snake[0].x>=18 || snake[0].x <= 0 || snake[0].y>=18 || snake[0].y <=0){
+    if( snake[0].x>=19 || snake[0].x < 0 || snake[0].y>=19 || snake[0].y <0){
         return true;
     }
     return false;
