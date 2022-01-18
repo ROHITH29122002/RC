@@ -6,6 +6,9 @@ let snakeArr = [
     {x: 13,y: 15}
 ];
 let food = {x: 6 , y: 7};
+const eat = new Audio('../music/eat.mp3');
+const gameover = new Audio('../music/gameover.mp3');
+const move = new Audio('../music/move.mp3');
 
 
 
@@ -32,12 +35,14 @@ function iscollide(snake){
 
 function gameEngine(){
     if(iscollide(snakeArr)){
+        gameover.play();
         inputdirection = {x: 0, y: 0};
         alert("GAME OVER");
         snakeArr= [ {x: 13 , y: 15}];
     }
 
     if( snakeArr[0].x === food.x && snakeArr[0].y === food.y){
+        eat.play();
         snakeArr.unshift({ x: snakeArr[0].x + inputdirection.x , y: snakeArr[0].y + inputdirection.y});
         let a= 2;
         let b= 16;
@@ -92,20 +97,24 @@ window.addEventListener("keydown", e => {
     inputdirection = {x: 0 , y: 1};
     switch (e.key) {
         case "ArrowUp":
+            move.play();
             inputdirection.x = 0;
             inputdirection.y = -1;
             break;
         case "ArrowDown":
+            move.play();
             inputdirection.x = 0;
             inputdirection.y = 1;
             
             break;
         case "ArrowLeft":
+            move.play();
             inputdirection.x = -1;
             inputdirection.y = 0;
             
             break;
         case "ArrowRight":
+            move.play();
             inputdirection.x = 1;
             inputdirection.y = 0;
             break;
