@@ -38,21 +38,24 @@ body {
   z-index: 1;
 }
 .head-down {
-  background: url(../images/snakedown.png);
+  background: url(../images/snakeup.png);
   background-size: 120%;
   background-position: center;
+  transform: rotate(180deg);
   z-index: 1;
 }
 .head-left {
-  background: url(../images/snakeleft.png);
+  background: url(../images/snakeup.png);
   background-size: 120%;
   background-position: center;
+  transform: rotate(-90deg);
   z-index: 1;
 }
 .head-right {
-  background: url(../images/snakeright.png);
+  background: url(../images/snakeup.png);
   background-size: 120%;
   background-position: center;
+  transform: rotate(90deg);
   z-index: 1;
 }
 
@@ -68,10 +71,6 @@ body {
   background-repeat: no-repeat;
   background-size: 80%;
   background-position: center;
-}
-
-.snake-div {
-  display: none;
 }
 
 .controls {
