@@ -61,6 +61,7 @@ function gameEngine(){
             document.querySelector('#highscore').innerHTML = ` HIGHSCORE : ${localStorage.getItem('snakescore')} (${localStorage.getItem('snakename')})`;
         }
         snakeArr = [{x:13 , y:15}];
+        count = 0;
     }
 
     if( snakeArr[0].x === food.x && snakeArr[0].y === food.y){
