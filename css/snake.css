@@ -301,8 +301,61 @@ body {
   border-radius: 5px;
 }
 
+.restart-button {
+  outline: 0;
+  margin-top: 1rem;
+  font-weight: 700;
+  color: green;
+  padding: 1rem 2rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: rgb(139, 216, 23);
+}
+
+.restart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.home-button {
+  outline: 0;
+  margin-top: 1rem;
+  padding: 1.2rem 2.3rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: dodgerblue;
+  margin-left: 3rem;
+}
+
+.homelink {
+  text-decoration: none;
+  font-weight: 700;
+  color: #fff;
+}
+
+.highscore {
+  color: green;
+  font-size: 3rem;
+}
+
+.score-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 20rem;
+}
+
+.score {
+  color: dodgerblue;
+  font-size: 3rem;
+}
+
 footer {
-  margin-top: 25rem;
+  margin-top: 5rem;
   background-color: #000;
   color: white;
 }

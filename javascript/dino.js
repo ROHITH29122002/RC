@@ -17,11 +17,12 @@ setInterval(() => {
         block.style.animation="none";
         block.style.display="none";
         clearInterval(counting);
-        if(localStorage.getItem('highscore')<(counter*50)){
-            localStorage.setItem('highscore',counter*50);
+        if(localStorage.getItem('dinohighscore')<(counter*50)){
+            localStorage.setItem('dinohighscore',counter*50);
+            localStorage.setItem('dinoname',dname);
         }
         alert(`GAME OVER!`);
-        document.querySelector('#highscore').innerHTML=`HIGHSCORE : ${localStorage.getItem('highscore')}`;
+        document.querySelector('#highscore').innerHTML=`HIGHSCORE : ${localStorage.getItem('dinohighscore')} (${localStorage.getItem('dinoname')})`;
     }
 }, 10);
 
@@ -30,12 +31,13 @@ document.querySelector('#restart-button').onclick=function (){
 };
 
 let counter=0;
-document.querySelector('#highscore').innerHTML=`HIGHSCORE : ${localStorage.getItem('highscore')}`;
+let dname = localStorage.getItem('name');
+document.querySelector('#highscore').innerHTML=`HIGHSCORE : ${localStorage.getItem('dinohighscore')} (${localStorage.getItem('dinoname')})`;
 const counting = setInterval(() => {
     counter++;
     document.querySelector('#score').innerHTML=` YOUR SCORE : ${counter*50}`;
 }, 1000);
 
 if (!localStorage.getItem('highscore')){
-    localStorage.setItem('highscore',0);
+    localStorage.setItem('highscore',"0");
 }

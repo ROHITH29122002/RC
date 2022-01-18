@@ -3,7 +3,7 @@ let inputdirection = {x: 0,y: 0};
 let speed = 5;
 let lastPaintTime = 0;
 let snakeArr = [
-    {x: 10,y: 10}
+    {x: 13,y: 15}
 ];
 const nbright = document.querySelector(".nb-right");
 const nbopen = document.querySelector(".nb-open");
@@ -12,6 +12,8 @@ let food = {x: 6 , y: 7};
 const eat = new Audio('music/eat.mp3');
 const gameover = new Audio('music/gameover.mp3');
 const move = new Audio('music/move.mp3');
+var count = 0;
+var sname = localStorage.getItem('name');
 
 nbopen.addEventListener('click',show);
 nbclose.addEventListener('click',close);
@@ -50,13 +52,20 @@ function iscollide(snake){
 function gameEngine(){
     if(iscollide(snakeArr)){
         gameover.play();
+        window.scrollBy(0,500);
         inputdirection = {x: 0, y: 0};
-        alert("GAME OVER");
-        snakeArr= [ {x: 13 , y: 15}];
+        alert(`GAME OVER! YOUR SCORE : ${count}`);
+        if(localStorage.getItem('snakescore') < count){
+            localStorage.setItem('snakename',sname);
+            localStorage.setItem('snakescore',count);
+            document.querySelector('#highscore').innerHTML = ` HIGHSCORE : ${localStorage.getItem('snakescore')} (${localStorage.getItem('snakename')})`;
+        }
+        snakeArr = [{x:13 , y:15}];
     }
 
     if( snakeArr[0].x === food.x && snakeArr[0].y === food.y){
         eat.play();
+        counting();
         snakeArr.unshift({ x: snakeArr[0].x + inputdirection.x , y: snakeArr[0].y + inputdirection.y});
         let a= 2;
         let b= 16;
@@ -158,3 +167,14 @@ document.querySelector('#right').addEventListener('click', () => {
     inputdirection.y =0;
 });
 
+
+
+function counting(){
+    count = count + 50;
+}
+
+document.querySelector('#restart-button').onclick = function (){
+    location.reload();
+    window.scrollBy(0,-500);
+}
+document.querySelector('#highscore').innerHTML = ` HIGHSCORE : ${localStorage.getItem('snakescore')} (${localStorage.getItem('snakename')})`;
