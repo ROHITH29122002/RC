@@ -22,37 +22,46 @@ body {
   width: 90vmin;
   height: 90vmin;
   border: 2px solid #000;
-  background: dodgerblue;
+  background: #73b671;
   display: grid;
   grid-template: repeat(18, 1fr) / repeat(18, 1fr);
 }
 
 .head-up {
-  background: url(../images/snakeheadup.png);
-  background-size: 100%;
+  background: url(../images/snakeup.png);
+  background-size: 120%;
+  background-position: center;
   z-index: 1;
 }
 .head-down {
-  background: url(../images/snakehead.png);
-  background-size: 100%;
+  background: url(../images/snakedown.png);
+  background-size: 120%;
+  background-position: center;
   z-index: 1;
 }
 .head-left {
-  background: url(../images/snakeheadleft.png);
-  background-size: 100%;
+  background: url(../images/snakeleft.png);
+  background-size: 120%;
+  background-position: center;
   z-index: 1;
 }
 .head-right {
-  background: url(../images/snakeheadright.png);
-  background-size: 100%;
+  background: url(../images/snakeright.png);
+  background-size: 120%;
+  background-position: center;
   z-index: 1;
 }
 
 .snake {
-  background: purple;
+  background: #a0c432;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-size: 50%;
 }
 
 .food {
-  background: url(../images/apple.png);
-  background-size: 100%;
+  background: url(../images/food.png);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
 }

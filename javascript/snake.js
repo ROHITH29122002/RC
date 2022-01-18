@@ -1,6 +1,6 @@
 //variables and constants.
 let inputdirection = {x: 0,y: 0};
-let speed = 2;
+let speed = 5;
 let lastPaintTime = 0;
 let snakeArr = [
     {x: 13,y: 15}
@@ -24,9 +24,10 @@ function iscollide(snake){
             return true;
         }
     }
-    if( snake[0].x>=18 || snake[0].x<=0 || snake[0].y>=18 || snake[0].y<=0){
+    if( snake[0].x>=18 || snake[0].x <= 0 || snake[0].y>=18 || snake[0].y <=0){
         return true;
     }
+    return false;
 }
 
 function gameEngine(){
