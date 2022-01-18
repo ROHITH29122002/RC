@@ -1,7 +1,10 @@
 var character=document.getElementById("character");
 var block=document.getElementById('block');
+const gameover = new Audio('music/gameover.mp3');
+const move = new Audio('music/move.mp3');
 document.querySelector('.game-container').onclick = function jump(){
     if( character.classList != "animate"){
+        move.play();
         character.classList.add('animate');
         setTimeout(() => {
             character.classList.remove('animate');
@@ -31,6 +34,7 @@ setInterval(() => {
     if( blockleft>50 && blockleft<70 && charactertop>155){
         block.style.animation="none";
         block.style.display="none";
+        gameover.play();
         clearInterval(counting);
         if(localStorage.getItem('dinohighscore')<(counter*50)){
             localStorage.setItem('dinohighscore',counter*50);
