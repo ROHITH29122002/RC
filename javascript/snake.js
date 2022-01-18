@@ -5,11 +5,25 @@ let lastPaintTime = 0;
 let snakeArr = [
     {x: 10,y: 10}
 ];
+const nbright = document.querySelector(".nb-right");
+const nbopen = document.querySelector(".nb-open");
+const nbclose = document.querySelector(".nb-close");
 let food = {x: 6 , y: 7};
 const eat = new Audio('music/eat.mp3');
 const gameover = new Audio('music/gameover.mp3');
 const move = new Audio('music/move.mp3');
 
+nbopen.addEventListener('click',show);
+nbclose.addEventListener('click',close);
+
+function show(){
+    nbright.style.display = 'flex';
+    nbright.style.top = '0';
+}
+
+function close(){
+    nbright.style.top = '-100%';
+}
 
 
 function main(ctime){

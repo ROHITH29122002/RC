@@ -13,7 +13,185 @@ html {
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  position: relative;
+  background-color: #e2f6ff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='1' y2='0' gradientTransform='rotate(0,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%233599FF'/%3E%3Cstop offset='1' stop-color='%2317FF0E'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='0' x2='0' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%23FF6D54'/%3E%3Cstop offset='1' stop-color='%23F3FF4B'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23FFF' fill-opacity='0' stroke-miterlimit='10'%3E%3Cg stroke='url(%23a)' stroke-width='3.3'%3E%3Cpath transform='translate(-21 4.8) rotate(3 1409 581) scale(1.012)' d='M1409 581 1450.35 511 1490 581z'/%3E%3Ccircle stroke-width='1.1' transform='translate(-12 12) rotate(3.6 800 450) scale(1.006)' cx='500' cy='100' r='40'/%3E%3Cpath transform='translate(10.8 -36) rotate(36 401 736) scale(1.006)' d='M400.86 735.5h-83.73c0-23.12 18.74-41.87 41.87-41.87S400.86 712.38 400.86 735.5z'/%3E%3C/g%3E%3Cg stroke='url(%23b)' stroke-width='1'%3E%3Cpath transform='translate(72 -4.8) rotate(1.2 150 345) scale(0.988)' d='M149.8 345.2 118.4 389.8 149.8 434.4 181.2 389.8z'/%3E%3Crect stroke-width='2.2' transform='translate(-48 -30) rotate(43.2 1089 759)' x='1039' y='709' width='100' height='100'/%3E%3Cpath transform='translate(-72 24) rotate(7.2 1400 132)' d='M1426.8 132.4 1405.7 168.8 1363.7 168.8 1342.7 132.4 1363.7 96 1405.7 96z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-size: cover;
+  height: 100vh;
+}
+.nb-logo {
+  width: 50px;
+}
+
+.nb-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 3rem;
+}
+
+.nb-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nb-heading {
+  font-size: 2rem;
+  padding-left: 1rem;
+  background: rgb(234, 76, 59);
+  background: linear-gradient(
+    135deg,
+    rgba(234, 76, 59, 1) 56%,
+    rgba(252, 193, 17, 1) 85%
+  );
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.904);
+  flex-wrap: wrap;
+}
+
+.nb-home,
+.nb-about {
+  padding-left: 1rem;
+  padding-right: 2rem;
+  margin-right: 1rem;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  font-weight: 700;
+  background: rgb(234, 76, 59);
+  background: linear-gradient(
+    135deg,
+    rgba(234, 76, 59, 1) 56%,
+    rgba(252, 193, 17, 1) 85%
+  );
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  font-size: 2rem;
+  padding-bottom: 0.2rem;
+  transition: 0.5 ease;
+}
+
+.nav-bar a:hover {
+  transform: scale(1.2);
+}
+
+.nb-logout {
+  padding: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  background: red;
+  color: white;
+  font-weight: 700;
+  font-size: 1.5rem;
+  outline: 0;
+  border: 1px solid red;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.nb-logout:hover {
+  padding: 1.5rem;
+  transition: padding 0.5s ease;
+}
+
+.nb-open {
+  font-size: 3rem;
+  background: rgb(234, 76, 59);
+  background: linear-gradient(
+    135deg,
+    rgba(234, 76, 59, 1) 56%,
+    rgba(252, 193, 17, 1) 85%
+  );
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin: 10px;
+  display: none;
+  cursor: pointer;
+}
+
+.nb-close {
+  font-size: 3rem;
+  display: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .nb-right {
+    height: 50vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    transition: top 1s ease;
+    display: none;
+  }
+
+  .nb-close {
+    display: block;
+    background: rgb(234, 76, 59);
+    background: linear-gradient(
+      135deg,
+      rgba(234, 76, 59, 1) 56%,
+      rgba(252, 193, 17, 1) 85%
+    );
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .nb-open {
+    display: block;
+    margin-right: 2rem;
+  }
+
+  .nav-bar a {
+    margin-top: 2rem;
+  }
+
+  .nb-logout {
+    margin-top: 2rem;
+    margin-left: 2rem;
+  }
+
+  .nb-logo {
+    width: 50px;
+  }
+
+  .nb-heading {
+    font-size: 2rem;
+  }
 }
 .game-container {
   display: flex;
@@ -121,4 +299,104 @@ body {
   background: dodgerblue;
   border: 1px solid blue;
   border-radius: 5px;
+}
+
+footer {
+  margin-top: 25rem;
+  background-color: #000;
+  color: white;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.f-logo-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.f-name {
+  background: rgb(234, 76, 59);
+  background: linear-gradient(
+    135deg,
+    rgba(234, 76, 59, 1) 56%,
+    rgba(252, 193, 17, 1) 85%
+  );
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  font-size: 4rem;
+  margin-left: 2rem;
+}
+
+.f-logo {
+  width: 30%;
+  height: 30%;
+}
+
+.f-contact {
+  color: #fff;
+  text-align: center;
+}
+
+.link-container {
+  width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.discord,
+.instagram,
+.github {
+  width: 100%;
+  transition: 0.5s ease;
+}
+
+.discord:hover,
+.instagram:hover,
+.github:hover {
+  transform: scale(1.2);
+}
+
+.link-container a {
+  margin-left: 1rem;
+}
+
+@media screen and (max-width: 850px) {
+  .f-logo-container {
+    justify-content: center;
+    margin-left: 2rem;
+  }
+  .f-right {
+    margin-left: -2rem;
+    margin-top: 2rem;
+  }
+
+  .link-container {
+    margin: 3rem 1rem 3rem -1rem;
+  }
+}
+
+.rights {
+  margin: 3rem;
+}
+
+hr {
+  border: 1px solid #fff;
+}
+
+.rights-heading {
+  font-weight: 700;
+  margin-top: 2rem;
+  text-align: center;
 }
