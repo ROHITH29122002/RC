@@ -3,7 +3,7 @@ let inputdirection = {x: 0,y: 0};
 let speed = 5;
 let lastPaintTime = 0;
 let snakeArr = [
-    {x: 13,y: 15}
+    {x: 10,y: 10}
 ];
 let food = {x: 6 , y: 7};
 const eat = new Audio('music/eat.mp3');
@@ -94,24 +94,22 @@ function gameEngine(){
 
 window.requestAnimationFrame(main);
 window.addEventListener("keydown", e => {
-    inputdirection = {x: 0 , y: 1};
     switch (e.key) {
         case "ArrowUp":
             move.play();
             inputdirection.x = 0;
             inputdirection.y = -1;
+           
             break;
         case "ArrowDown":
             move.play();
             inputdirection.x = 0;
             inputdirection.y = 1;
-            
             break;
         case "ArrowLeft":
             move.play();
             inputdirection.x = -1;
             inputdirection.y = 0;
-            
             break;
         case "ArrowRight":
             move.play();
@@ -122,3 +120,27 @@ window.addEventListener("keydown", e => {
             break;
     }
 });
+
+document.querySelector('#up').addEventListener('click', () => {
+    move.play();
+    inputdirection.x=0;
+    inputdirection.y =-1;
+});
+
+document.querySelector('#down').addEventListener('click', () => {
+    move.play();
+    inputdirection.x=0;
+    inputdirection.y =1;
+});
+
+document.querySelector('#left').addEventListener('click', () => {
+    move.play();
+    inputdirection.x=-1;
+    inputdirection.y =-0;
+});
+document.querySelector('#right').addEventListener('click', () => {
+    move.play();
+    inputdirection.x=1;
+    inputdirection.y =0;
+});
+
