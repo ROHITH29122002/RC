@@ -140,6 +140,26 @@ window.addEventListener("keydown", e => {
             inputdirection.x = 1;
             inputdirection.y = 0;
             break;
+        case "W":
+            move.play();
+            inputdirection.x = 0;
+            inputdirection.y = -1;
+            break;
+        case "S":
+            move.play();
+            inputdirection.x = 0;
+            inputdirection.y = 1;
+             break;
+        case "A":
+            move.play();
+            inputdirection.x = -1;
+            inputdirection.y = 0;
+            break;
+        case "D":
+            move.play();
+            inputdirection.x = 1;
+            inputdirection.y = 0;
+            break;
         default:
             break;
     }
