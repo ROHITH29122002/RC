@@ -119,23 +119,23 @@ function gameEngine(){
 window.requestAnimationFrame(main);
 window.addEventListener("keydown", e => {
     switch (e.key) {
-        case "ArrowUp":
+        case "w":
             move.play();
             inputdirection.x = 0;
             inputdirection.y = -1;
            
             break;
-        case "ArrowDown":
+        case "s":
             move.play();
             inputdirection.x = 0;
             inputdirection.y = 1;
             break;
-        case "ArrowLeft":
+        case "a":
             move.play();
             inputdirection.x = -1;
             inputdirection.y = 0;
             break;
-        case "ArrowRight":
+        case "d":
             move.play();
             inputdirection.x = 1;
             inputdirection.y = 0;

@@ -241,6 +241,7 @@ body {
   background: #a0c432;
   border: 1px solid #000;
   border-radius: 5px;
+  z-index: 1;
   background-size: 50%;
 }
 
@@ -408,15 +409,15 @@ footer {
   margin-top: 3rem;
 }
 
-.discord,
-.instagram,
+.twitter,
+.linkedin,
 .github {
   width: 100%;
   transition: 0.5s ease;
 }
 
-.discord:hover,
-.instagram:hover,
+.twitter:hover,
+.linkedin:hover,
 .github:hover {
   transform: scale(1.2);
 }
