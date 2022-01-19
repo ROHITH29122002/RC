@@ -581,14 +581,14 @@ footer {
 }
 
 .twitter,
-.instagram,
+.linkedin,
 .github {
   width: 100%;
   transition: 0.5s ease;
 }
 
 .twitter:hover,
-.instagram:hover,
+.linkedin:hover,
 .github:hover {
   transform: scale(1.2);
 }
