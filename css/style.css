@@ -580,14 +580,14 @@ footer {
   margin-top: 3rem;
 }
 
-.discord,
+.twitter,
 .instagram,
 .github {
   width: 100%;
   transition: 0.5s ease;
 }
 
-.discord:hover,
+.twitter:hover,
 .instagram:hover,
 .github:hover {
   transform: scale(1.2);
