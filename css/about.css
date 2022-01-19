@@ -19,3 +19,65 @@ body {
   background-size: cover;
   height: 100vh;
 }
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5rem;
+  background-color: white;
+  margin: 2rem;
+  box-sizing: 0 0 20px rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  flex-wrap: wrap;
+}
+
+.about-heading {
+  background: rgb(234, 76, 59);
+  background: linear-gradient(
+    135deg,
+    rgba(234, 76, 59, 1) 56%,
+    rgba(252, 193, 17, 1) 85%
+  );
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.img-container {
+  margin: 2rem 2rem;
+  border-radius: 20px;
+  box-sizing: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+.student {
+  width: 100%;
+}
+.about-container {
+  margin: 2rem;
+}
+
+.about-text {
+  line-height: 35px;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-transform: capitalize;
+}
+
+.red {
+  color: red;
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
