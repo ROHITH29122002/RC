@@ -1,11 +1,16 @@
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 html {
   font-size: 62.5%;
+  line-height: 1.5;
 }
 .game-align {
+  margin-top: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,7 +23,6 @@ html {
   width: 80vw;
   height: 300px;
   border: 2px solid rgb(148, 147, 147);
-  margin-top: 5rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -394,15 +398,15 @@ footer {
   margin-top: 3rem;
 }
 
-.discord,
-.instagram,
+.twitter,
+.linkedin,
 .github {
   width: 100%;
   transition: 0.5s ease;
 }
 
-.discord:hover,
-.instagram:hover,
+.twitter:hover,
+.linkedin:hover,
 .github:hover {
   transform: scale(1.2);
 }
@@ -428,6 +432,7 @@ footer {
 
 .rights {
   margin: 3rem;
+  margin-bottom: 0;
 }
 
 hr {

@@ -22,6 +22,181 @@ body {
   background-repeat: no-repeat;
   height: 100vh;
 }
+.nb-logo {
+  width: 50px;
+}
+
+.nb-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 3rem;
+}
+
+.nb-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nb-heading {
+  font-size: 2rem;
+  padding-left: 1rem;
+  background: rgb(234, 76, 59);
+  background: linear-gradient(
+    135deg,
+    rgba(234, 76, 59, 1) 56%,
+    rgba(252, 193, 17, 1) 85%
+  );
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.904);
+  flex-wrap: wrap;
+}
+
+.nb-home,
+.nb-about {
+  padding-left: 1rem;
+  padding-right: 2rem;
+  margin-right: 1rem;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  font-weight: 700;
+  background: rgb(234, 76, 59);
+  background: linear-gradient(
+    135deg,
+    rgba(234, 76, 59, 1) 56%,
+    rgba(252, 193, 17, 1) 85%
+  );
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  font-size: 2rem;
+  padding-bottom: 0.2rem;
+  transition: 0.5 ease;
+}
+
+.nav-bar a:hover {
+  transform: scale(1.2);
+}
+
+.nb-logout {
+  padding: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  background: red;
+  color: white;
+  font-weight: 700;
+  font-size: 1.5rem;
+  outline: 0;
+  border: 1px solid red;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.nb-logout:hover {
+  padding: 1.5rem;
+  transition: padding 0.5s ease;
+}
+
+.nb-open {
+  font-size: 3rem;
+  background: rgb(234, 76, 59);
+  background: linear-gradient(
+    135deg,
+    rgba(234, 76, 59, 1) 56%,
+    rgba(252, 193, 17, 1) 85%
+  );
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin: 10px;
+  display: none;
+  cursor: pointer;
+}
+
+.nb-close {
+  font-size: 3rem;
+  display: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .nb-right {
+    height: 50vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    transition: top 1s ease;
+    display: none;
+  }
+
+  .nb-close {
+    display: block;
+    background: rgb(234, 76, 59);
+    background: linear-gradient(
+      135deg,
+      rgba(234, 76, 59, 1) 56%,
+      rgba(252, 193, 17, 1) 85%
+    );
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .nb-open {
+    display: block;
+    margin-right: 2rem;
+  }
+
+  .nav-bar a {
+    margin-top: 2rem;
+  }
+
+  .nb-logout {
+    margin-top: 2rem;
+    margin-left: 2rem;
+  }
+
+  .nb-logo {
+    width: 50px;
+  }
+
+  .nb-heading {
+    font-size: 2rem;
+  }
+}
 
 .container {
   display: flex;
@@ -110,9 +285,7 @@ form {
   flex-direction: column;
 }
 
-.name-input {
-  width: 30vw;
-}
+.name-input,
 textarea {
   width: 30vw;
 }
@@ -167,4 +340,104 @@ label {
   background-color: rgb(139, 216, 23);
   border: 1px solid rgb(139, 216, 23);
   color: #fff;
+}
+
+footer {
+  margin-top: 4rem;
+  background-color: #000;
+  color: white;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.f-logo-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.f-name {
+  background: rgb(234, 76, 59);
+  background: linear-gradient(
+    135deg,
+    rgba(234, 76, 59, 1) 56%,
+    rgba(252, 193, 17, 1) 85%
+  );
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  font-size: 4rem;
+  margin-left: 2rem;
+}
+
+.f-logo {
+  width: 30%;
+  height: 30%;
+}
+
+.f-contact {
+  color: #fff;
+  text-align: center;
+}
+
+.link-container {
+  width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.twitter,
+.linkedin,
+.github {
+  width: 100%;
+  transition: 0.5s ease;
+}
+
+.twitter:hover,
+.linkedin:hover,
+.github:hover {
+  transform: scale(1.2);
+}
+
+.link-container a {
+  margin-left: 1rem;
+}
+
+@media screen and (max-width: 850px) {
+  .f-logo-container {
+    justify-content: center;
+    margin-left: 2rem;
+  }
+  .f-right {
+    margin-left: -2rem;
+    margin-top: 2rem;
+  }
+
+  .link-container {
+    margin: 3rem 1rem 3rem -1rem;
+  }
+}
+
+.rights {
+  margin: 3rem;
+}
+
+hr {
+  border: 1px solid #fff;
+}
+
+.rights-heading {
+  font-weight: 700;
+  margin-top: 2rem;
+  text-align: center;
 }
