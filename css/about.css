@@ -206,7 +206,7 @@ body {
   margin-top: 5rem;
   background-color: white;
   margin: 2rem;
-  box-sizing: 0 0 20px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
   border-radius: 20px;
   flex-wrap: wrap;
 }
@@ -216,10 +216,11 @@ body {
   text-align: center;
   font-size: 4rem;
   font-weight: 700;
+  margin-top: 5rem;
 }
 
 .img-container {
-  margin: 2rem 2rem;
+  margin: 2rem 3rem;
   border-radius: 20px;
   box-sizing: 0 0 20px rgba(0, 0, 0, 0.6);
 }
